@@ -1,0 +1,119 @@
+/* Main theme colors */
+:root {
+    --primary-color: #4e54c8;
+    --secondary-color: #8f94fb;
+    --accent-color: #ff6b6b;
+    --background-color: #f5f7fa;
+    --text-color: #333333;
+    --light-text: #6c757d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Global styling */
+  .main {
+    background: linear-gradient(135deg, var(--background-color) 0%, #c3cfe2 100%);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Card components */
+  .feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Prediction hat animation */
+  .prediction-hat {
+    transition: transform 0.3s ease;
+  }
+  
+  .prediction-hat:hover {
+    transform: rotate(15deg) scale(1.1);
+  }
+  
+  /* Button styling */
+  button {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color) !important;
+    box-shadow: var(--box-shadow) !important;
+  }
+  
+  /* Chat interface styling */
+  .doctor-chat-container {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: white;
+    height: 400px;
+    overflow-y: auto;
+  }
+  
+  .user-message {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px 18px 0 18px;
+    margin: 5px 0;
+    width: fit-content;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  
+  .doctor-message {
+    background-color: #e9ecef;
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 18px 18px 18px 0;
+    margin: 5px 0;
+    width: fit-content;
+    max-width: 80%;
+  }
+  
+  /* Video consultation styling */
+  .video-container {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+  }
+  
+  /* Metrics and visualizations */
+  .metric-container {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Tabs styling */
+  .stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+  }
+  
+  .stTabs [data-baseweb="tab"] {
+    border-radius: 4px 4px 0 0;
+    padding: 10px 20px;
+    background-color: #f0f2f6;
+  }
+  
+  .stTabs [aria-selected="true"] {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+  

@@ -1,0 +1,17 @@
+# This script will generate the cancer_data.csv file
+import pandas as pd
+from sklearn.datasets import load_breast_cancer
+
+# Load the Wisconsin Breast Cancer dataset
+cancer = load_breast_cancer()
+
+# Create a DataFrame
+df = pd.DataFrame(cancer.data, columns=cancer.feature_names)
+df['diagnosis'] = cancer.target
+
+# Save to CSV
+df.to_csv('data/cancer_data.csv', index=False)
+
+print("Dataset saved to data/cancer_data.csv")
+print(f"Dataset shape: {df.shape}")
+print(f"Features: {df.columns.tolist()}")
